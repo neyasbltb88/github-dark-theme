@@ -10210,9 +10210,7 @@ a:hover,
 
 header.Header
 {
-  background-color: #25272a;
   padding-top: 0;
-  padding-bottom: 25px;
   tab-size: 2 !important;
 }
 
@@ -10291,7 +10289,11 @@ span.labels> a,span.IssueLabel>a, .IssueLabel, .label-name
 
 /* 
 * Желто-зеленое свечение     box-shadow: 0 0 3px #c9ff00;
-* 
+* Черный цвет: #111
+* Темно-синий: #151F29
+* Голубой цвет ссылок: #93BCD1  | rgba(147, 188, 209, 1)
+* Цвет шапки: #24292E
+* Цвет body: #212121
 */
 
 /* Драг-н-дроп бинарника в релизизе */
@@ -10309,67 +10311,65 @@ file-attachment.dragover .drag-and-drop {
   color: #25272a !important;
 }
 
-/* Octotree */
-.octotree_github_sidebar {
-  box-shadow: 0 0 25px -2px #111;
+/* Status icon */
+.user-status-header {
+  background-color: #25272A;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-.octotree_github_sidebar a.octotree_toggle > span::after, .octotree_github_sidebar a.octotree_opts {
-  -webkit-filter: none !important;
-  filter: none !important;
-}
-
-a.octotree_toggle:not(.octotree_loading) > span:after, .octotree_github_sidebar a.octotree_opts, .octotree_help > span {
-  -webkit-filter: none !important;
-  filter: none !important;
-}
-
-a.octotree_toggle:not(.octotree_loading):hover > span:after, .octotree_github_sidebar a.octotree_opts:hover, .octotree_treeview .jstree-icon.tree {
-    -webkit-filter: none !important;
-  filter: none !important;
-}
-
-
-a.octotree_toggle:not(.octotree_loading) > span:after, .octotree_github_sidebar a.octotree_opts, .octotree_help > span {
-    -webkit-filter: none !important;
-  filter: none !important;
-}
-
-.octotree_github_sidebar a.octotree_toggle > span::after, .octotree_github_sidebar a.octotree_opts {
-    -webkit-filter: none !important;
-  filter: none !important;
-}
-
-.octotree_github_sidebar a.octotree_toggle > span::after, .octotree_github_sidebar a.octotree_opts {
-    -webkit-filter: none !important;
-  filter: none !important;
-}
-
-a.octotree_toggle:not(.octotree_loading) > span:after, .octotree_github_sidebar a.octotree_opts, .octotree_help > span {
-  -webkit-filter: none !important;
-  filter: none !important;
-}
-
-.octotree_toggle span:after {
-  color: #c0c0c0;
-}
-
-.octotree_toggle:hover span:after {
+.user-status-message-wrapper .link-gray:hover {
   color: #93bcd1 !important;
 }
 
-.octotree_github_sidebar .octotree_views .octotree_view .octotree_view_header {
-  height: 56px;
-  background-color: #24292e !important;
+/* Octotree v3 */
+.octotree-sidebar.octotree-github-sidebar .octotree-toggle {
+  background-color: #151F29;
+  box-shadow: rgba(0, 0, 0, .2) 2px 0px 5px 0px;
 }
 
-.octotree_github_sidebar {
-  padding-top: 56px;
+.octotree-sidebar.octotree-github-sidebar .octotree-toggle > span,
+.octotree-sidebar.octotree-github-sidebar .octotree-toggle > .octotree-toggle-icon::before {
+  color: #93BCD1;
 }
 
-.octotree_sidebar .octotree_bottom {
+.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-view .octotree-view-header {
+  background-color: #24292E;
+}
+
+.octotree-show .octotree-sidebar.octotree-github-sidebar {
+  box-shadow: 0 0 25px -2px #111;
+}
+
+.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-view {
+  background-color: #212121;
+}
+
+.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-anchor {
+  color: #93BCD1 !important;
+  transition: color .2s ease-in-out;
+}
+
+.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-default .jstree-anchor.jstree-hovered {
+  color: #fff !important;
+}
+
+.octotree-sidebar.octotree-github-sidebar .octotree-footer {
   background-color: #111;
 }
+
+.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-settings-view > .octotree-ad-big {
+  background-color: #151F29;
+}
+
+.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-view {
+  color: #93BCD1;
+}
+
+
+
+
+
+
 }
 
 @-moz-document domain("pages.github.com") {
