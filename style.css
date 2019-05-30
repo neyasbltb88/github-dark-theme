@@ -10365,11 +10365,11 @@ file-attachment.dragover .drag-and-drop {
   color: #93BCD1;
 }
 
-
-
-
-
-
+/* Рамки запиненных репозиториев */
+.js-pinned-items-reorder-form .pinned-items-list .pinned-item-list-item {
+	border: 1px solid rgba(174, 174, 174, .2) !important;
+	box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, .3) !important;
+}
 }
 
 @-moz-document domain("pages.github.com") {
