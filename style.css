@@ -10390,6 +10390,10 @@ file-attachment.dragover .drag-and-drop {
   opacity: 1;
 }
 
+.ddict_audio {
+  margin-top: -7px !important;
+}
+
 .ddict_audio:hover {
   background-color: #25272a;
 }
@@ -10397,6 +10401,9 @@ file-attachment.dragover .drag-and-drop {
 .ddict_div .ddict_translit {
   color: #d1e8ff;
   position: relative;
+  display: block;
+  z-index: -1;
+  margin-bottom: 10px !important;
 }
 
 .ddict_div .ddict_translit:after {
@@ -10413,7 +10420,6 @@ file-attachment.dragover .drag-and-drop {
 
 .ddict_div .ddict_sentence {
   color: #fafbfc;
-  margin-top: 10px !important;
   font-weight: normal;
   font-size: 14px;
 }
