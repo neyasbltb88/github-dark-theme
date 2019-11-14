@@ -1,5 +1,12 @@
 @echo off
+chcp 65001 > nul
+
 :BEGIN
-set /p message=‘®®¡é¥­¨¥ ª®¬¬¨â :
-git commit -am "%message%" && git push
+set /p message=Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð¼Ð¼Ð¸Ñ‚Ð°: 
+
+git add .
+git commit -am "%message%"
+git push
+echo.
+
 goto BEGIN
